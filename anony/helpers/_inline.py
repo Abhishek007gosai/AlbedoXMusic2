@@ -138,21 +138,21 @@ class Inline:
         rows = [
             [
                 self.ikb(
-                    text=lang["ᴀᴅᴅ ᴍᴇ"],
+                    text=lang["add_me"],
                     url=f"https://t.me/{app.username}?startgroup=true",
                 )
             ],
             [self.ikb(text=lang["help"], callback_data="help")],
             [
-                self.ikb(text=lang["sᴜᴘᴘᴏʀᴛ"], url=config.SUPPORT_CHAT),
-                self.ikb(text=lang["ᴄʜᴀɴɴᴇʟ"], url=config.SUPPORT_CHANNEL),
+                self.ikb(text=lang["support"], url=config.SUPPORT_CHAT),
+                self.ikb(text=lang["channel"], url=config.SUPPORT_CHANNEL),
             ],
         ]
         if private:
             rows += [
                 [
                     self.ikb(
-                        text=lang["ᴀɴɪᴍᴇ ɴᴇᴡs"],
+                        text=lang["source"],
                         url="https://t.me/Anime_News_Arena",
                     )
                 ]

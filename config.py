@@ -8,8 +8,8 @@ class Config:
         self.API_ID = 23537462
         self.API_HASH = "c9599a5aa61ee8ca4f5e778d20c61f24"
 
-        self.BOT_TOKEN = ("")
-        self.MONGO_URL = ("")
+        self.BOT_TOKEN = ("8462016049:AAF5xNxW4rgE2LkEzO54sFaX-5TxOK4cYjU")
+        self.MONGO_URL = ("mongodb+srv://musicxrobot:8Up92WwJbgUS39FV@cluster0.ys1jirt.mongodb.net/")
 
         self.LOGGER_ID = (-1002456565415)
         self.OWNER_ID = 7654385403
@@ -18,16 +18,16 @@ class Config:
         self.QUEUE_LIMIT = int(getenv("QUEUE_LIMIT", 20))
         self.PLAYLIST_LIMIT = int(getenv("PLAYLIST_LIMIT", 20))
 
-        self.SESSION1 = ""
+        self.SESSION1 = "BQFnJzYAhANoymBdzLTwTWxBHuZn3DfkKQAQm_ADHyzyvjyB-re3z2VOF4oHmLLlgVLQK5i5TEa0lbrDOw-O-EVU_qRNhpe3mPf9vuP37Z4V2xlXOiDVmDAfn-dLe5IKZvLAEBe1R-qnDHRtQBxapZUDEHXrcgAMxeTZRpqLQX5SwklujV_Pqx-6PmVXLe6XlQeblrn3IRAfPWOalNdD1A2wmqVBcSmFxgN29zw_ManEnnnBbo1SQC1LqnIUVHOLJ47NZ5mmYjnsJE3XDNjlxco6fSHNmWxlTsBgSFwOQbXK6Ay0rNwi7HeHmuU_ffKO0zTN4VzyNOa3bSSI6g084C-pGYWK4QAAAAHY2x8OAA"
         self.SESSION2 = getenv("SESSION2", None)
         self.SESSION3 = getenv("SESSION3", None)
 
         self.SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/AnimeNexusNetwork/160")
         self.SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/EternalsHelplineBot")
 
-        self.AUTO_END: bool = getenv("AUTO_END",  False)
+        self.AUTO_END: bool = getenv("AUTO_END",  None)
         self.AUTO_LEAVE: bool = getenv("AUTO_LEAVE", True)
-        self.VIDEO_PLAY: bool = getenv("VIDEO_PLAY", True)
+        self.VIDEO_PLAY: bool = getenv("VIDEO_PLAY", None)
         self.COOKIES_URL = [
             url for url in getenv("COOKIES_URL", "https://batbin.me/bractea").split(" ")
             if url and "batbin.me" in url

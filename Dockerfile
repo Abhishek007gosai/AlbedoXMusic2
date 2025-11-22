@@ -1,17 +1,30 @@
-FROM python:3.13-slim
+FROM python:3.10-slim
 
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    ffmpeg \
+    gcc \
+    libffi-dev \
+    build-essential \
+    curl \
+    unzip \
+    && apt-get clean
+
+# Install Deno (yt-dlp support)
+RUN curl -fsSL https://deno.land/install.sh | sh
+ENV DENO_INSTALL="/root/.deno"
+ENV PATH="$DENO_INSTALL/bin:$PATH"
+
+# Workdir
 WORKDIR /app
-COPY requirements.txt .
 
-RUN apt-get update -y && apt-get upgrade -y \
-    && apt-get install -y --no-install-recommends ffmpeg curl unzip \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+# Copy bot files
+COPY . /app
 
-RUN curl -fsSL https://deno.land/install.sh | sh \
-    && ln -s /root/.deno/bin/deno /usr/local/bin/deno
+# Install deps
+RUN pip install --no-cache-dir -r requirements.txt
 
-RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-COPY . .
+EXPOSE 8000
 
-CMD ["bash", "start"]
+# Start health server + ping script + bot
+CMD python3 app.py & python3 -m anony

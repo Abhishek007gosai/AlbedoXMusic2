@@ -8,8 +8,8 @@ class Config:
         self.API_ID = 23537462
         self.API_HASH = "c9599a5aa61ee8ca4f5e778d20c61f24"
 
-        self.BOT_TOKEN = ("")
-        self.MONGO_URL = ("m/")
+        self.BOT_TOKEN = ("8462016049:AAF5xNxW4rgE2LkEzO54sFaX-5TxOK4cYjU")
+        self.MONGO_URL = ("mongodb+srv://musicxrobot:8Up92WwJbgUS39FV@cluster0.ys1jirt.mongodb.net/")
 
         self.LOGGER_ID = (-1002456565415)
         self.OWNER_ID = 7654385403
@@ -18,7 +18,7 @@ class Config:
         self.QUEUE_LIMIT = int(getenv("QUEUE_LIMIT", 20))
         self.PLAYLIST_LIMIT = int(getenv("PLAYLIST_LIMIT", 20))
 
-        self.SESSION1 = ""
+        self.SESSION1 = "BQFnJzYAhANoymBdzLTwTWxBHuZn3DfkKQAQm_ADHyzyvjyB-re3z2VOF4oHmLLlgVLQK5i5TEa0lbrDOw-O-EVU_qRNhpe3mPf9vuP37Z4V2xlXOiDVmDAfn-dLe5IKZvLAEBe1R-qnDHRtQBxapZUDEHXrcgAMxeTZRpqLQX5SwklujV_Pqx-6PmVXLe6XlQeblrn3IRAfPWOalNdD1A2wmqVBcSmFxgN29zw_ManEnnnBbo1SQC1LqnIUVHOLJ47NZ5mmYjnsJE3XDNjlxco6fSHNmWxlTsBgSFwOQbXK6Ay0rNwi7HeHmuU_ffKO0zTN4VzyNOa3bSSI6g084C-pGYWK4QAAAAHY2x8OAA"
         self.SESSION2 = getenv("SESSION2", None)
         self.SESSION3 = getenv("SESSION3", None)
 

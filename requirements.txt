@@ -1,4 +1,5 @@
 aiohttp~=3.13.1
+Flask==2.3.3
 kurigram>=2.2.13
 pillow~=12.0.0
 psutil~=7.1.2

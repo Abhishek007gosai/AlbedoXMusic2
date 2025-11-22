@@ -25,7 +25,7 @@ class Config:
         self.SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/AnimeNexusNetwork/160")
         self.SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/EternalsHelplineBot")
 
-        self.AUTO_END: bool = getenv("AUTO_END", True)
+        self.AUTO_END: bool = getenv("AUTO_END",  False)
         self.AUTO_LEAVE: bool = getenv("AUTO_LEAVE", True)
         self.VIDEO_PLAY: bool = getenv("VIDEO_PLAY", True)
         self.COOKIES_URL = [
